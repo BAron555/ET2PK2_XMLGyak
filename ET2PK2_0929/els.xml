@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "elshozdtd">
+<konyvek>
+  <konyv>
+    <cim>Grafikus es jatekalkalmazasok programozasa</cim>
+    <ev>2017</ev>
+    <kiado>BBS-Info Kft.</kiado>
+    <szerzo>Feher Krisztian</szerzo>
+    <leirasabst>asdaegnjoeghi</leirasabst>
+    <id>716254</id>
+  </konyv>
+
+  <konyv>
+  	<cim>Programozas Turbo Pascal nyelven kezdoknek</cim>
+  	<ev>2003</ev>
+  	<kiado>BBS-Info Kft.</kiado>
+  	<szerzo>Molnar Csaba</szerzo>
+  	<szerzo>Sagi Gabor</szerzo>
+  	<leirasabst>gnfsagwgjoeghi</leirasabst>
+    <id>173931</id>
+  </konyv>
+
+  <konyv>
+  	<cim>Direct2D - DirectX programozas egyszeruen</cim>
+  	<ev>2018</ev>
+  	<kiado>BBS-Info Kft.</kiado>
+  	<szerzo>Feher Krisztian</szerzo>
+  	<leirasabst>asdaegnj2gadsgoeghi</leirasabst>
+    <id>826178</id>
+  </konyv>
+
+</konyvek> 
