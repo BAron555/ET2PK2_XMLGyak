@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT konyv (gazda+,kutya*,kakas*,tyuk*,roka*,diszno*)>
+<!ELEMENT gazda (#PCDATA)>
+<!ELEMENT kutya (#PCDATA)>
+<!ELEMENT kakas (#PCDATA)> 
+<!ELEMENT tyuk (#PCDATA)>
+<!ELEMENT roka (#PCDATA)>
+<!ELEMENT diszno (#PCDATA)> 
