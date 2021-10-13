@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE note SYSTEM "orarend.dtd">
+
+<nevjegykartyak>
+  
+  <nevjegykartya id="1">
+    <nev>Bajzath Aron Jozsef</nev>
+    <ceg>
+      <nev>Akft</nev>
+	    <cim>
+	      <iranyitoszam>3000</iranyitoszam>
+	      <varos>Budapest..</varos>
+	      <utca>Kecsői ut</utca>
+	      <hazszam>142<hazszam>
+	    </cim>
+	    <telefonszam>06209244352<weblap>
+	    <weblap>berenyi.com<weblap>
+	  </ceg>
+    <beosztas>Inas</beosztas>
+    <telefonszam>06202146323</telefonszam>
+    <email>BAJtmp@gmail.com</email>
+  </nevjegykartya>
+
+ <nevjegykartya id="2">
+   <nev>Kis Janos</nev>
+   <ceg>
+     <nev>Akft</nev>
+	   <cim>
+	     <iranyitoszam>3000</iranyitoszam>
+	     <varos>Budapest..</varos>
+	     <utca>Kecsői ut</utca>
+	     <hazszam>142<hazszam>
+	   </cim>
+	   <telefonszam>06209244352<weblap>
+	   <weblap>berenyi.com<weblap>
+	 </ceg>
+     <beosztas>csibész</beosztas>
+     <telefonszam>06202516723</telefonszam>
+     <email>HTtmp@gmail.com</email>
+ </nevjegykartya>
+
+ <nevjegykartya id="3">
+   <nev>Wecsés Anita</nev>
+   <ceg>
+     <nev>Lidl</nev>
+	    <cim>
+	      <iranyitoszam>3100</iranyitoszam>
+	      <varos>Cegled</varos>
+	      <utca>fo utca</utca>
+	      <hazszam>37<hazszam>
+	    </cim>
+	  <telefonszam>06209521475<weblap>
+	  <weblap>lidl.hu<weblap>
+	</ceg>
+  <beosztas>takarito</beosztas>
+  <telefonszam>06202419371</telefonszam>
+  <email>WAtmp@gmail.com</email>
+  </nevjegykartya>
+
+</nevjegykartyak>
