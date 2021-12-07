@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim cim="XMLadatkezeles"/>
+    <hallgatok>
+        <hallgato>
+            <nev nev="Bajzath Aron"/>
+            <lakcim cim="3586"/>
+        </hallgato>
+    </hallgatok>
+    <helyszin hely="Miskolci Egyetem"/>
+    <eloado>
+        <nev nev="Bednarik Lászlo"/>
+        <adoszam id="125125616"/>
+        <lakcim cim="Miskolc"/>
+    </eloado>
+    <datum datum="2021.09.22"/>
+</konferencia>
