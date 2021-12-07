@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE note SYSTEM "elshozdtd">
+<!DOCTYPE note SYSTEM "et2pk2_konyv.dtd">
 <konyvek>
   <konyv>
     <cim>Grafikus es jatekalkalmazasok programozasa</cim>
