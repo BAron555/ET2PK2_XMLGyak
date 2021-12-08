@@ -13,17 +13,14 @@ attribútummal.
 11) Válassza ki a class elem összes student elemét, amelynél a kor>20.
 
 
-1 class/student
+1  class/student
 2  //student[@id='01']	
 3  //student	
 4  /class/student[2]
 5  /class/student[last()]
-6	 /class/student[last()-1]
-7	 /class/student[1] | /class/student[2]
-8	 /class/*	
-9	 //student[@*]
+6  /class/student[last()-1]
+7  /class/student[1] | /class/student[2]
+8  /class/*	
+9  //student[@*]
 10 //*
 11 /class/student[kor>20]
-
-	
-
