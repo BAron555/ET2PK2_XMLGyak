@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE note SYSTEM "makcskadtd.dtd">
+
+<macskak>
+ <macska id="1">
+        <nev>Inas</nev>
+        <kor>3</kor>
+        <fajta>Fekete</fajta>
+ </macska>
+
+ <macska id="2">
+        <nev>Kehes</nev>
+        <kor>14</kor>
+        <fajta>Fekete</fajta>
+ </macska>
+
+ <macska id="3">
+        <nev>Cirmi</nev>
+        <kor>7</kor>
+        <fajta>Fekete</fajta>
+ </macska>
+</macskak>
