@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+//<!DOCTYPE note SYSTEM "users.dtd">
+
+<users>
+ <user id="1">
+        <firstname>Bajzath</firstname>
+        <lastname>Aron</lastname>
+        <profession>Tanulo</profession>
+ </user>
+
+ <user id="2">
+        <firstname>Nagy</firstname>
+        <lastname>Bela</lastname>
+        <profession>Pedagogus</profession>
+ </user>
+
+ <user id="3">
+        <firstname>Kiss</firstname>
+        <lastname>Kazmer</lastname>
+        <profession>sofor</profession>
+ </user>
+</users>	
