@@ -6,7 +6,7 @@
          <body>
             <h2>Órarend</h2>
             <table border="1">
-               <tr bgcolor="#9acd32">
+               <tr bgcolor="#008000">
                   <th style="text-align:left">id</th>
                   <th style="text-align:left">típus</th>
                   <th style="text-align:left">targy</th>
