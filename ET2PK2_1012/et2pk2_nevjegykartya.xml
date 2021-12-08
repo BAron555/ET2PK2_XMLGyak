@@ -14,7 +14,7 @@
 	      <utca>Kecsői ut</utca>
 	      <hazszam>142</hazszam>
 	    </cim>
-	    <telefonszam>06209244352</weblap>
+	    <telefonszam>06209244352</telefonszam>
 	    <weblap>berenyi.com</weblap>
 	  </ceg>
     <beosztas>Inas</beosztas>
@@ -32,7 +32,7 @@
 	     <utca>Kecsői ut</utca>
 	     <hazszam>142</hazszam>
 	   </cim>
-	   <telefonszam>06209244352</weblap>
+	   <telefonszam>06209244352</telefonszam>
 	   <weblap>berenyi.com</weblap>
 	 </ceg>
      <beosztas>csibész</beosztas>
@@ -50,7 +50,7 @@
 	      <utca>fo utca</utca>
 	      <hazszam>37</hazszam>
 	    </cim>
-	  <telefonszam>06209521475</weblap>
+	  <telefonszam>06209521475</telefonszam>
 	  <weblap>lidl.hu</weblap>
 	</ceg>
   <beosztas>takarito</beosztas>
