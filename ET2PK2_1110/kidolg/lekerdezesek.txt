@@ -1,0 +1,29 @@
+Feladat:
+1) Válassza ki az összes student element, amely a class gyermekei.
+2) Válassza ki azt a student elemet, amely rendelkezik "id" attribútummal és értéke "01".
+3) Kiválasztja az összes student elemet, függetlenül attól, hogy hol vannak a dokumentumban.
+4) Válassza ki a második student element, amely a class elem gyermeke.
+5) Válassza ki az utolsó student elemet, amely a class elem gyermeke.
+6) Válassza ki az utolsó előtti student elemet, amely a class elem gyermeke
+7) Válassza ki az első két student elemet, amelyek a class elem gyermekei.
+8) Válassza ki class elem összes gyermek elemét.
+9) Válassza ki az összes student elemet, amely rendelkezik legalább egy bármilyen
+attribútummal.
+10) Válassza ki a dokumentum összes elemét.
+11) Válassza ki a class elem összes student elemét, amelynél a kor>20.
+
+
+1 class/student
+2  //student[@id='01']	
+3  //student	
+4  /class/student[2]
+5  /class/student[last()]
+6	 /class/student[last()-1]
+7	 /class/student[1] | /class/student[2]
+8	 /class/*	
+9	 //student[@*]
+10 //*
+11 /class/student[kor>20]
+
+	
+
