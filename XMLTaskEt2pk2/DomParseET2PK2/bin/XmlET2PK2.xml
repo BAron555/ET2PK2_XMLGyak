@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="XMLSchemaET2PK2.xsd" ?>
+<bolt>
+
+	<horgaszboltok>
+		<horgaszbolt id="h1">
+			<nev>Sporgio Horgaszbolt</nev>
+			<cim>
+				<utca>Szilagyi Dezso utca</utca>
+				<varos>Miskolc</varos>
+				<hazszam>9</hazszam>
+			</cim>
+
+			<telefonszam>06 30 978 2382</telefonszam>
+			<fk_id_horgaszbot refid="bot1">horgaszbot1
+			</fk_id_horgaszbot>
+			<fk_id_vasarlo refid="vasarlo1">vasarlo1</fk_id_vasarlo>
+
+		</horgaszbolt>
+		<horgaszbolt id="h2">
+			<nev>Meduza Horgaszbolt</nev>
+			<cim>
+				<utca>Pesti út</utca>
+				<varos>Miskolc</varos>
+				<hazszam>8</hazszam>
+			</cim>
+
+			<telefonszam>06 20 788 1727</telefonszam>
+			<fk_id_horgaszbot refid="bot2">horgaszbot2
+			</fk_id_horgaszbot>
+			<fk_id_vasarlo refid="vasarlo2">vasarlo2</fk_id_vasarlo>
+		</horgaszbolt>
+	</horgaszboltok>
+
+	<horgaszbotok>
+		<horgaszbot id="bot1">
+			<modell>Black Fox TFD-4</modell>
+			<hossz>3meter</hossz>
+			<minoseg>premium</minoseg>
+			<suly>2kg</suly>
+			<fk_id_gyarto refid="gy1">gy1</fk_id_gyarto>
+		</horgaszbot>
+		<horgaszbot id="bot2">
+			<modell> Black Fox A-2 </modell>
+			<hossz>3.3meter</hossz>
+			<minoseg>premium</minoseg>
+			<suly>4kg</suly>
+			<fk_id_gyarto refid="gy1">gy1</fk_id_gyarto>
+		</horgaszbot>
+	</horgaszbotok>
+	<gyartok>
+		<gyarto id="gy1">
+			<nev>Wind Blade</nev>
+			<szarmazasihely>Canada</szarmazasihely>
+			<telefonszam>45 79 84 00 00</telefonszam>
+		</gyarto>
+	</gyartok>
+
+	<vasarlok>
+		<vasarlo id="vasarlo1">
+			<nev>Kovacs Endre</nev>
+			<email>endre@gmail.com</email>
+			<cim>
+				<utca>Petofi utca</utca>
+				<varos>Miskolc</varos>
+				<hazszam>1</hazszam>
+			</cim>
+		</vasarlo>
+
+		<vasarlo id="vasarlo2">
+			<nev>Pocs Judit</nev>
+			<email>judit@gmail.com</email>
+			<cim>
+				<utca>Dozsa utca</utca>
+				<varos>Miskolc</varos>
+				<hazszam>12</hazszam>
+
+			</cim>
+		</vasarlo>
+	</vasarlok>
+	<vasarlasok>
+		<vasarlas id="vasarlas1">
+			<jotallas>igen</jotallas>
+			<termek>horgaszbot</termek>
+			<beszallito>Euro Co.</beszallito>
+			<fk_id_fiz refid="f1">fiz1</fk_id_fiz>
+		</vasarlas>
+
+		<vasarlas id="vasarlas2">
+			<jotallas>igen</jotallas>
+			<termek>horgaszbot</termek>
+			<beszallito>Slovansko Zrt.</beszallito>
+			<fk_id_fiz refid="f2">fiz1</fk_id_fiz>
+		</vasarlas>
+	</vasarlasok>
+
+	<vasarlasok_kapcsolotabla>
+		<kapcsvasarlasok id="1">
+			<fk_id_vasarlo refid="vasarlo1">vasarlo1</fk_id_vasarlo>
+			<fk_id_vasarlas refid="vasarlas1">vasarlas1</fk_id_vasarlas>
+			<darab>1</darab>
+			<datum>2021.12.01</datum>
+		</kapcsvasarlasok>
+
+		<kapcsvasarlasok id="2">
+			<fk_id_vasarlo refid="vasarlo2">vasarlo2</fk_id_vasarlo>
+			<fk_id_vasarlas refid="vasarlas2">vasarlas2</fk_id_vasarlas>
+			<darab>1</darab>
+			<datum>2021.10.29</datum>
+		</kapcsvasarlasok>
+	</vasarlasok_kapcsolotabla>
+
+	<fizetesek>
+		<fizetes id="f1">
+			<datum>2021.12.01</datum>
+			<osszeg>120000</osszeg>
+			<szamla>igen</szamla>
+		</fizetes>
+
+		<fizetes id="f2">
+			<datum>2021.10.29</datum>
+			<osszeg>210000</osszeg>
+			<szamla>igen</szamla>
+		</fizetes>
+	</fizetesek>
+
+</bolt>
+

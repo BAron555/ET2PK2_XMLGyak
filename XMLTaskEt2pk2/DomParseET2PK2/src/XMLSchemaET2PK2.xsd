@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="qualified">
+
+	<xs:element name="bolt">
+
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="horgaszboltok" type="horgaszbolttype" />
+				<xs:element name="horgaszbotok" type="horgaszbottype" />
+				<xs:element name="gyartok" type="gyartoktype" />
+				<xs:element name="vasarlok" type="vasarloktype" />
+				<xs:element name="vasarlasok" type="vasarlasoktype" />
+				<xs:element name="vasarlasok_kapcsolotabla"	type="vasarlasok_kapcsolotablatype" />
+				<xs:element name="fizetesek" type="fizetesektype" />
+			</xs:sequence>
+		</xs:complexType>
+
+
+		<xs:key name="horgaszboltKey">
+			<xs:selector xpath="horgaszboltok/horgaszbolt" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+
+		<xs:key name="horgaszbotokKey">
+			<xs:selector xpath="horgaszbotok/horgaszbot" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+		<xs:key name="gyartokKey">
+			<xs:selector xpath="gyartok/gyarto" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+		<xs:key name="vasarlokKey">
+			<xs:selector xpath="vasarlok/vasarlo" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+		<xs:key name="vasarlasokKey">
+			<xs:selector xpath="vasarlasok/vasarlas" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+		<xs:key name="vasarlasok_kapcsolotablaKey">
+			<xs:selector xpath="vasarlasok_kapcsolotabla/vasarlasok" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+		<xs:key name="fizetesekKey">
+			<xs:selector xpath="fizetesek/fizetes" />
+			<xs:field xpath="@id" />
+		</xs:key>
+
+		<xs:keyref name="horgaszbot-gyarto" refer="gyartokKey">
+			<xs:selector xpath="horgaszbotok/horgaszbot/id" />
+			<xs:field xpath="@id" />
+		</xs:keyref>
+
+		<xs:keyref name="horgaszbolt-horgaszbot" refer="horgaszbotokKey">
+			<xs:selector xpath="horgaszbolt/horgaszbolt/id" />
+			<xs:field xpath="@id" />
+		</xs:keyref>
+
+		<xs:keyref name="horgaszbolt-vasarlo" refer="horgaszboltKey">
+			<xs:selector xpath="horgaszboltok/horgaszbolt/id" />
+			<xs:field xpath="@id" />
+		</xs:keyref>
+
+		<xs:keyref name="vasarlas-fizetes" refer="vasarlasokKey">
+			<xs:selector xpath="fizetesek/fizetes/id" />
+			<xs:field xpath="@id" />
+		</xs:keyref>
+
+	</xs:element>
+
+	<xs:complexType name="horgaszbolttype">
+		<xs:sequence>
+			<xs:element name="horgaszbolt" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nev" type="xs:string" />
+						<xs:element name="cim" type="cimtype" />
+						<xs:element name="telefonszam" type="xs:string" />
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="cimtype">
+		<xs:sequence>
+			<xs:element name="utca" type="xs:string" />
+			<xs:element name="varos" type="xs:string" />
+			<xs:element name="hazszam" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="horgaszbottype">
+		<xs:sequence>
+			<xs:element name="horgaszbot" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="modell" type="xs:string" />
+						<xs:element name="minoseg" type="minosegtype" />
+						<xs:element name="suly" type="xs:int" />
+						<xs:element name="hossz" type="xs:int" />
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="minosegtype">
+		<xs:sequence>
+			<xs:element name="premium" type="xs:string" />
+			<xs:element name="amateur" type="xs:string" />
+			<xs:element name="medium" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="gyartoktype">
+		<xs:sequence>
+			<xs:element name="gyartok" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nev" type="xs:string" />
+						<xs:element name="szarmazasihely" type="xs:string" />
+						<xs:element name="telefonszam" type="xs:string" />
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="vasarloktype">
+		<xs:sequence>
+			<xs:element name="rendelo" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nev" type="xs:string" />
+						<xs:element name="email" type="xs:string" />
+						<xs:element name="cim" type="cimtype" />
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="vasarlasok_kapcsolotablatype">
+		<xs:sequence>
+			<xs:element name="kapcsvasarlasok" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="darab" type="xs:integer" />
+						<xs:element name="datum" type="xs:string" />
+
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+
+
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="vasarlasoktype">
+		<xs:sequence>
+			<xs:element name="vasarlas" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="jotallas" type="xs:string" />
+						<xs:element name="termek" type="xs:string" />
+						<xs:element name="beszallito" type="xs:string" />
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="fizetesektype">
+		<xs:sequence>
+			<xs:element name="fizetes" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datum" type="xs:string" />
+						<xs:element name="osszeg" type="cimtype" />
+						<xs:element name="fizetesimod" type="xs:string" />
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:ID" use="required" />
+
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
